@@ -1,14 +1,34 @@
-import React from 'react';
+import React from "react";
 import Logo from "../assets/Logo.png";
 // import { Button } from "@material-tailwind/react";
 import imgPlay from "../assets/play store.png";
 import imgApple from "../assets/applelogo.png";
 import { IconButton } from "@material-tailwind/react";
 
-
 export default function Footer() {
-    return (
-        <>
+  return (
+    <footer className="bg-Secondary text-gray-400 py-6 mt-10">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        {/* Left */}
+        <p className="text-sm font-light">
+          Copyright © 2024 Demo-web Hot Movie Dev by NS.
+        </p>
+
+        {/* Right */}
+        <div className="flex space-x-4 mt-3 md:mt-0">
+          <a href="#" className="text-sm hover:text-gray-200 transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#" className="text-sm hover:text-gray-200 transition-colors">
+            Terms of Service
+          </a>
+          <a href="#" className="text-sm hover:text-gray-200 transition-colors">
+            Contact
+          </a>
+        </div>
+      </div>
+
+      {/* <>
         <div className="flex flex-col items-center gap-32 pt-24 pb-5 bg-Secondary">
           <div className="w-10/12 mx-auto flex justify-between gap-y-4 items-center flex-wrap">
             <div className="logo flex flex-col gap-6">
@@ -63,6 +83,7 @@ export default function Footer() {
           </div>
           <p className='w-10/12 mx-auto font-bold text-center'>Copyright © 2024 Hot Movie Dev by Nws.</p>
         </div>
-        </>
-      );
+        </> */}
+    </footer>
+  );
 }
